@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root{
+    --background: #1F2632;
+    --text-fonts: #CEE3E9;
+    --advice-dice-color: #52FFA8;
+    --advice-card-color: #323A49;
+
+
+    --fonte-principal: 'Manrope', sans-serif;
+}
