@@ -4,14 +4,14 @@ body{
     font-weight: 800;
 }
 
-.card{
+main{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.generator-conselhos{
+.card-advice-generator{
     background-color: var(--advice-card-color);
     display: flex;
     flex-direction: column;
@@ -21,40 +21,39 @@ body{
     border-radius: 10px;
 }
 
-.number-conselho{
+.advice-number{
     color: var(--advice-dice-color);
-    padding: 30px 0px 10px 0px;
-    font-size: 15px;
+    padding: 30px 10px;
+    font-size: 1.5rem;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
 
-.conselho{
+.advice-text{
     color: var(--text-fonts);
     padding: 23px;
-    font-size: 22px;
+    font-size: 2.2rem;
     text-align: center;
 }
 
-.img-pattern{
+.image-pattern{
     text-align: center;
 }
 
-.img-pattern img{
+.image-pattern img{
     width: 75%;
 }
 
-.imagem-dice{
+.image-dice{
     background-color: var(--advice-dice-color);
     width: 60px;
     height: 60px;
     border-radius: 50%;
     border: none;
     transform: translateY(50%);
+    cursor: pointer;
 }
 
-.imagem-dice:hover{
-    color: #53FFAB;
-    cursor: pointer;
+.image-dice:hover{
     box-shadow: 1px 1px 20px 20px #52ffa921;
 }

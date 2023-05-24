@@ -1,11 +1,11 @@
-@media(max-width: 768px){
-    .generator-conselhos{
+@media(max-width: 668px){
+    .card-advice-generator{
         width: 345px;
         padding-inline: 50px;
     }
 
-    .conselho{
-        font-size: 20px;
+    .advice-text{
+        font-size: 2rem;
         padding: 26px;
     }
 }

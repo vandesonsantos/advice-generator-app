@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>Frontend Mentor | Advice generator app</title>
+  <title>Advice Generator App</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon.png">
 
   <link rel="stylesheet" href="./src/css/reset.css">
   <link rel="stylesheet" href="./src/css/variaveis.css">
@@ -14,28 +14,28 @@
   
 </head>
 <body>
-
-  <main class="card">
-    <div class="generator-conselhos">
-      
-      <p class="number-conselho">
-        Advice #117</p>
+  <main>
+    <div class="card-advice-generator">
+      <p class="advice-number">
+        Advice #117
+      </p>
   
-      <h4 class="conselho">
+      <h4 class="advice-text">
         "It is easy to sit up and take notice, what's difficult is getting up and taking action."
       </h4>
       
-      <picture class="img-pattern">
-        <source media="(max-width: 768px)" srcset="./src/images/pattern-divider-mobile.svg">
+      <picture class="image-pattern">
+        <source media="(max-width: 668px)" srcset="./src/images/pattern-divider-mobile.svg">
         
         <img src="src/images/pattern-divider-desktop.svg" alt="icone pattern">
       </picture>
       
-      <button class="imagem-dice">
+      <button class="image-dice" id="btn-generator">
         <img src="./src/images/icon-dice.svg" alt="icone dice">
       </button>
     </div>
   </main>
   
+  <script src="./src/js/index.js"></script>
 </body>
 </html>
