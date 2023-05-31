@@ -1,13 +1,18 @@
-const geradorDeConselhos = document.getElementById("btn-generator")
-const numeroConselho = document.querySelector(".advice-number")
-const textoConselho = document.querySelector(".advice-text")
+document.getElementById("btn-generator").addEventListener("click", () => {
+    apiGeradorDeConselhos()
+})
 
-const apiGeradorDeConselhos = async() => {
-    const respostas = await fetch("https://api.adviceslip.com/advice")
-    const data = await respostas.json()
-   
-    numeroConselho.innerHTML = `Advice #${data.slip.id}`
-    textoConselho.innerHTML = data.slip.advice
+async function conselhosAleatorios() {
+    const url = "https://api.adviceslip.com/advice"
+    const respostas = await fetch(url)
+    return await respostas.json()
 }
 
-geradorDeConselhos.addEventListener("click", apiGeradorDeConselhos)
+const numeroDeConselho = document.querySelector(".advice-number")
+const textoDeConselho = document.querySelector(".advice-text")
+
+async function apiGeradorDeConselhos() {
+    const conselhos = await conselhosAleatorios()
+    numeroDeConselho.innerHTML = `Advice #${conselhos.slip.id}`
+    textoDeConselho.innerHTML = conselhos.slip.advice
+}
